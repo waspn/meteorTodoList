@@ -3,7 +3,7 @@ import { createContainer } from 'meteor/react-meteor-data'
 import { PropTypes } from 'prop-types'
 
 import { Tasks } from '../api/tasks.js'
-import { Task } from './Task'
+import Task from './Task'
 
 // App component - represents the whole app
 class App extends Component {
@@ -33,7 +33,7 @@ class App extends Component {
       text: this.refs.textInput.value,
       createdAt: new Date(), // current time
     })
-    
+
     // Clear form
     this.refs.textInput.value = ''
   }
