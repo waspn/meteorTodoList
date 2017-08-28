@@ -101,6 +101,11 @@ li.private {
   background: #eee;
   border-color: #ddd;
 }
+
+li > .date {
+  float: right;
+  font-weight: bold;
+}
  
 header .hide-completed {
   float: right;
